@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App001 - Sistemas de numeración</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.0.3/src/regular/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.0.3/src/fill/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.0.3/src/duotone/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.0.3/src/bold/style.css">
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.inset-y-0{top:0px;bottom:0px}.right-0{right:0px}.mx-auto{margin-left:auto;margin-right:auto}.my-4{margin-top:1rem;margin-bottom:1rem}.mx-4{margin-left:1rem;margin-right:1rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mb-3{margin-bottom:0.75rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-xl{max-width:36rem}.border-collapse{border-collapse:collapse}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.list-inside{list-style-position:inside}.list-disc{list-style-type:disc}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-red-500{--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-50\/70{background-color:rgb(248 250 252 / 0.7)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.pb-2{padding-bottom:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-emerald-900{--tw-text-opacity:1;color:rgb(6 78 59 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-blue-500{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity, 1))}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity, 1))}.focus\:ring-offset-2:focus{--tw-ring-offset-width:2px}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:bg-slate-400:disabled{--tw-bg-opacity:1;background-color:rgb(148 163 184 / var(--tw-bg-opacity, 1))}@media (min-width: 640px){.sm\:col-span-1{grid-column:span 1 / span 1}.sm\:col-span-3{grid-column:span 3 / span 3}.sm\:col-span-4{grid-column:span 4 / span 4}.sm\:w-1\/3{width:33.333333%}.sm\:w-2\/3{width:66.666667%}.sm\:w-auto{width:auto}.sm\:grid-cols-11{grid-template-columns:repeat(11, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse))}.sm\:p-6{padding:1.5rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:p-8{padding:2rem}}</style></head>
+  <body class="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased">
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
+      <header class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+        <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+          <div class="flex items-center space-x-3">
+            <div class="bg-blue-600 p-2 rounded-lg">
+              <i class="ph-bold ph-function text-white text-2xl"></i>
+            </div>
+            <h1 class="text-2xl font-bold text-slate-900">App001 - Sistemas de numeración</h1>
+          </div>
+          <nav class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 bg-slate-200 p-1 rounded-lg">
+            <button id="tab-explicacion" class="tab-button px-4 py-2 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 flex items-center justify-center bg-white text-slate-700 hover:bg-slate-100">
+              <i class="ph-fill ph-book-open-text mr-2"></i>
+              Explicación
+            </button>
+            <button id="tab-conversor" class="tab-button px-4 py-2 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 flex items-center justify-center bg-white text-slate-700 hover:bg-slate-100">
+              <i class="ph-fill ph-arrows-clockwise mr-2"></i>
+              Conversor de Unidades
+            </button>
+            <button id="tab-conversor-sistemas" class="tab-button px-4 py-2 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 flex items-center justify-center bg-blue-600 text-white shadow-md">
+              <i class="ph-fill ph-calculator mr-2"></i>
+              Conversor de Sistemas
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="mt-8">
+        <!-- Explicación Tab Content -->
+        <div id="content-explicacion" class="tab-content hidden">
+          <div class="space-y-8">
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-5 border-b border-slate-200 bg-slate-50/70">
+                <div class="flex items-center space-x-3">
+                  <i class="ph-duotone ph-info text-3xl text-blue-500"></i>
+                  <h2 class="text-xl font-bold text-slate-800">1. Informática e información</h2>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 leading-relaxed">
+                  La informática es la ciencia que estudia el tratamiento automático de la información. Utiliza
+                  computadoras para procesar datos y obtener la máxima utilidad de ellos. La información no es solo
+                  datos; es el conocimiento que se adquiere a través de la comunicación, y su valor depende del
+                  receptor. Un sistema de comunicación básico consta de un <strong>emisor</strong>, un
+                  <strong>receptor</strong> y un <strong>medio</strong> o canal.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-5 border-b border-slate-200 bg-slate-50/70">
+                <div class="flex items-center space-x-3">
+                  <i class="ph-duotone ph-key text-3xl text-blue-500"></i>
+                  <h2 class="text-xl font-bold text-slate-800">1.1 Simbología y codificación</h2>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  La codificación es el proceso de transformar datos a una representación predefinida. Usamos códigos
+                  para convertir información en un formato adecuado para su transmisión o procesamiento. Por ejemplo, el
+                  alfabeto Morse convierte letras en puntos y rayas para la telegrafía.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                  En los ordenadores, la información se representa internamente mediante impulsos eléctricos, que tienen
+                  dos estados: encendido (1) o apagado (0). Este es el fundamento del <strong>código binario</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-5 border-b border-slate-200 bg-slate-50/70">
+                <div class="flex items-center space-x-3">
+                  <i class="ph-duotone ph-list-numbers text-3xl text-blue-500"></i>
+                  <h2 class="text-xl font-bold text-slate-800">2. Sistemas de numeración</h2>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  Un sistema de numeración es un conjunto de símbolos y reglas para representar cantidades. La
+                  <strong>base</strong> de un sistema es el número de símbolos que utiliza. El sistema que usamos
+                  comúnmente es el <strong>decimal (base 10)</strong>, que utiliza los dígitos del 0 al 9.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                  En los sistemas posicionales, el valor de un dígito depende de su posición. Por ejemplo, en el número
+                  6839:
+                </p>
+                <code class="block bg-slate-100 p-4 rounded-md my-4 text-center font-mono">(6 × 10³) + (8 × 10²) + (3 × 10¹) + (9 × 10⁰) = 6000 + 800 + 30 + 9 = 6839</code>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-5 border-b border-slate-200 bg-slate-50/70">
+                <div class="flex items-center space-x-3">
+                  <i class="ph-duotone ph-number-two text-3xl text-blue-500"></i>
+                  <h2 class="text-xl font-bold text-slate-800">2.2. El sistema binario</h2>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  El sistema binario (base 2) utiliza solo dos dígitos: <strong>0 y 1</strong>. Cada dígito se llama
+                  <strong>bit</strong> (binary digit). Es el sistema fundamental en la computación. Los valores de los
+                  bits dependen de su posición, que corresponde a una potencia de 2.
+                </p>
+                <p class="text-slate-600 leading-relaxed">Por ejemplo, el número binario 1011,01 en decimal es:</p>
+                <code class="block bg-slate-100 p-4 rounded-md my-4 font-mono text-center">
+                  (1 × 2³) + (0 × 2²) + (1 × 2¹) + (1 × 2⁰) + (0 × 2⁻¹) + (1 × 2⁻²) = 8 + 0 + 2 + 1 + 0 + 0.25 = 11.25
+                </code>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-5 border-b border-slate-200 bg-slate-50/70">
+                <div class="flex items-center space-x-3">
+                  <i class="ph-duotone ph-number-eight text-3xl text-blue-500"></i>
+                  <h2 class="text-xl font-bold text-slate-800">2.3. El sistema octal</h2>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 leading-relaxed">
+                  El sistema octal (base 8) utiliza ocho dígitos: <strong>0, 1, 2, 3, 4, 5, 6, 7</strong>. Se usaba en
+                  informática como una forma más compacta de representar números binarios, ya que cada dígito octal
+                  corresponde a un grupo de 3 bits.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-5 border-b border-slate-200 bg-slate-50/70">
+                <div class="flex items-center space-x-3">
+                  <i class="ph-duotone ph-number-square-sixteen text-3xl text-blue-500"></i>
+                  <h2 class="text-xl font-bold text-slate-800">2.4. El sistema hexadecimal</h2>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  El sistema hexadecimal (base 16) utiliza dieciséis símbolos: los dígitos del <strong>0 al 9</strong> y
+                  las letras <strong>A, B, C, D, E, F</strong> para representar los valores del 10 al 15.
+                </p>
+                <div class="overflow-x-auto my-4">
+                  <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-100">
+                      <tr>
+                        <th class="border-b-2 border-slate-200 p-3 font-semibold text-slate-700">Símbolo Hex</th>
+                        <th class="border-b-2 border-slate-200 p-3 font-semibold text-slate-700">Valor Decimal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="hover:bg-slate-50">
+                        <td class="border-b border-slate-200 p-3 font-mono">A</td>
+                        <td class="border-b border-slate-200 p-3 font-mono">10</td>
+                      </tr>
+                      <tr class="hover:bg-slate-50">
+                        <td class="border-b border-slate-200 p-3 font-mono">B</td>
+                        <td class="border-b border-slate-200 p-3 font-mono">11</td>
+                      </tr>
+                      <tr class="hover:bg-slate-50">
+                        <td class="border-b border-slate-200 p-3 font-mono">C</td>
+                        <td class="border-b border-slate-200 p-3 font-mono">12</td>
+                      </tr>
+                      <tr class="hover:bg-slate-50">
+                        <td class="border-b border-slate-200 p-3 font-mono">D</td>
+                        <td class="border-b border-slate-200 p-3 font-mono">13</td>
+                      </tr>
+                      <tr class="hover:bg-slate-50">
+                        <td class="border-b border-slate-200 p-3 font-mono">E</td>
+                        <td class="border-b border-slate-200 p-3 font-mono">14</td>
+                      </tr>
+                      <tr class="hover:bg-slate-50">
+                        <td class="border-b border-slate-200 p-3 font-mono">F</td>
+                        <td class="border-b border-slate-200 p-3 font-mono">15</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="text-slate-600 leading-relaxed mt-4">
+                  Es muy utilizado en computación para representar direcciones de memoria o colores (ej.
+                  <code class="bg-slate-200 text-slate-800 font-mono px-1 rounded text-sm">#FFFFFF</code> es blanco).
+                  Cada dígito hexadecimal corresponde a un grupo de 4 bits.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-5 border-b border-slate-200 bg-slate-50/70">
+                <div class="flex items-center space-x-3">
+                  <i class="ph-duotone ph-arrows-left-right text-3xl text-blue-500"></i>
+                  <h2 class="text-xl font-bold text-slate-800">2.5. Conversiones entre sistemas</h2>
+                </div>
+              </div>
+              <div class="p-6">
+                <ul class="list-disc list-inside text-slate-600 space-y-3">
+                  <li>
+                    <strong>Hexadecimal a Binario:</strong> Cada dígito hexadecimal se convierte en su equivalente de 4
+                    bits. (Ej: <code class="bg-slate-200 text-slate-800 font-mono px-1 rounded text-sm">A → 1010</code>,
+                    <code class="bg-slate-200 text-slate-800 font-mono px-1 rounded text-sm">5 → 0101</code>).
+                  </li>
+                  <li>
+                    <strong>Binario a Hexadecimal:</strong> Se agrupan los bits de 4 en 4 y se convierte cada grupo a su
+                    dígito hexadecimal equivalente.
+                  </li>
+                  <li>
+                    <strong>Octal a Binario:</strong> Cada dígito octal se convierte en su equivalente de 3 bits. (Ej:
+                    <code class="bg-slate-200 text-slate-800 font-mono px-1 rounded text-sm">7 → 111</code>,
+                    <code class="bg-slate-200 text-slate-800 font-mono px-1 rounded text-sm">2 → 010</code>).
+                  </li>
+                  <li>
+                    <strong>Binario a Octal:</strong> Se agrupan los bits de 3 en 3 y se convierte cada grupo a su
+                    dígito octal equivalente.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conversor de Unidades Tab Content -->
+        <div id="content-conversor" class="tab-content hidden">
+          <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+            <div class="p-6">
+              <div class="text-center">
+                <i class="ph-duotone ph-arrows-clockwise text-5xl text-blue-500 mb-4"></i>
+                <h2 class="text-3xl font-bold text-slate-800 mb-2">Conversor de Unidades de Almacenamiento</h2>
+                <p class="text-center text-slate-500 max-w-2xl mx-auto mb-8">
+                  Compara las unidades del Sistema Internacional (SI) base 1000 con las unidades de prefijo binario base
+                  1024 (IEC).
+                </p>
+              </div>
+              <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 max-w-xl mx-auto">
+                <input type="text" id="inputValue" value="1" class="w-full sm:w-2/3 text-2xl p-3 border-2 border-slate-300 rounded-lg shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition font-mono">
+                <div class="relative w-full sm:w-1/3">
+                  <select id="fromUnit" class="w-full text-lg p-3 border-2 border-slate-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition appearance-none">
+                    <option value="KB">KB</option>
+                    <option value="MB">MB</option>
+                    <option value="GB" selected="">GB</option>
+                    <option value="TB">TB</option>
+                    <option value="PB">PB</option>
+                    <option value="EB">EB</option>
+                    <option value="ZB">ZB</option>
+                    <option value="YB">YB</option>
+                    <option value="KiB">KiB</option>
+                    <option value="MiB">MiB</option>
+                    <option value="GiB">GiB</option>
+                    <option value="TiB">TiB</option>
+                    <option value="PiB">PiB</option>
+                    <option value="EiB">EiB</option>
+                    <option value="ZiB">ZiB</option>
+                    <option value="YiB">YiB</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-700">
+                    <i class="ph-bold ph-caret-down"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                <div>
+                  <h3 class="text-xl font-semibold mb-4 text-blue-700 border-b-2 border-blue-200 pb-2 flex items-center">
+                    <i class="ph-fill ph-globe mr-2"></i>Sistema Internacional (SI)
+                  </h3>
+                  <div id="si-units" class="space-y-3 mt-4"><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Kilobyte <span class="text-sm text-slate-500">(KB)</span></span>
+                    <span class="font-mono text-lg text-blue-900 bg-white px-3 py-1 rounded-md border border-slate-200">1.000.000</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Megabyte <span class="text-sm text-slate-500">(MB)</span></span>
+                    <span class="font-mono text-lg text-blue-900 bg-white px-3 py-1 rounded-md border border-slate-200">1000</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-blue-100 ring-2 ring-blue-500 shadow-md">
+                    <span class="font-medium text-slate-700">Gigabyte <span class="text-sm text-slate-500">(GB)</span></span>
+                    <span class="font-mono text-lg text-blue-900 bg-white px-3 py-1 rounded-md border border-slate-200">1</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Terabyte <span class="text-sm text-slate-500">(TB)</span></span>
+                    <span class="font-mono text-lg text-blue-900 bg-white px-3 py-1 rounded-md border border-slate-200">0,001</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Petabyte <span class="text-sm text-slate-500">(PB)</span></span>
+                    <span class="font-mono text-lg text-blue-900 bg-white px-3 py-1 rounded-md border border-slate-200">0,000001</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Exabyte <span class="text-sm text-slate-500">(EB)</span></span>
+                    <span class="font-mono text-lg text-blue-900 bg-white px-3 py-1 rounded-md border border-slate-200">0,000000001</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Zettabyte <span class="text-sm text-slate-500">(ZB)</span></span>
+                    <span class="font-mono text-lg text-blue-900 bg-white px-3 py-1 rounded-md border border-slate-200">0</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Yottabyte <span class="text-sm text-slate-500">(YB)</span></span>
+                    <span class="font-mono text-lg text-blue-900 bg-white px-3 py-1 rounded-md border border-slate-200">0</span>
+                </div></div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-4 text-emerald-700 border-b-2 border-emerald-200 pb-2 flex items-center">
+                    <i class="ph-fill ph-cpu mr-2"></i>Prefijo Binario (IEC)
+                  </h3>
+                  <div id="iec-units" class="space-y-3 mt-4"><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Kibibyte <span class="text-sm text-slate-500">(KiB)</span></span>
+                    <span class="font-mono text-lg text-emerald-900 bg-white px-3 py-1 rounded-md border border-slate-200">976.562,5</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Mebibyte <span class="text-sm text-slate-500">(MiB)</span></span>
+                    <span class="font-mono text-lg text-emerald-900 bg-white px-3 py-1 rounded-md border border-slate-200">953,6743164063</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Gibibyte <span class="text-sm text-slate-500">(GiB)</span></span>
+                    <span class="font-mono text-lg text-emerald-900 bg-white px-3 py-1 rounded-md border border-slate-200">0,9313225746</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Tebibyte <span class="text-sm text-slate-500">(TiB)</span></span>
+                    <span class="font-mono text-lg text-emerald-900 bg-white px-3 py-1 rounded-md border border-slate-200">0,0009094947</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Pebibyte <span class="text-sm text-slate-500">(PiB)</span></span>
+                    <span class="font-mono text-lg text-emerald-900 bg-white px-3 py-1 rounded-md border border-slate-200">0,0000008882</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Exbibyte <span class="text-sm text-slate-500">(EiB)</span></span>
+                    <span class="font-mono text-lg text-emerald-900 bg-white px-3 py-1 rounded-md border border-slate-200">0,0000000009</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Zebibyte <span class="text-sm text-slate-500">(ZiB)</span></span>
+                    <span class="font-mono text-lg text-emerald-900 bg-white px-3 py-1 rounded-md border border-slate-200">0</span>
+                </div><div class="p-3 rounded-lg flex justify-between items-center transition duration-300 bg-slate-50 hover:bg-slate-100">
+                    <span class="font-medium text-slate-700">Yobibyte <span class="text-sm text-slate-500">(YiB)</span></span>
+                    <span class="font-mono text-lg text-emerald-900 bg-white px-3 py-1 rounded-md border border-slate-200">0</span>
+                </div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conversor de Sistemas Tab Content -->
+        <div id="content-conversor-sistemas" class="tab-content">
+          <div class="space-y-8">
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-6">
+                <div class="text-center">
+                  <i class="ph-duotone ph-calculator text-5xl text-blue-500 mb-4"></i>
+                  <h2 class="text-3xl font-bold text-slate-800 mb-2">Conversor de Sistemas Numéricos</h2>
+                  <p class="text-slate-500 max-w-2xl mx-auto">
+                    Introduce un número, selecciona las bases de origen y destino, y obtén el resultado junto con una
+                    explicación detallada del proceso generada por IA.
+                  </p>
+                </div>
+
+                <div class="mt-8 max-w-3xl mx-auto">
+                  <div class="grid grid-cols-1 sm:grid-cols-11 gap-4 items-end">
+                    <div class="sm:col-span-4">
+                      <label for="numero" class="block text-sm font-medium text-slate-700 mb-1">Número a convertir</label>
+                      <input id="numero" type="text" placeholder="Ej: 1A3F" class="w-full text-2xl p-3 border-2 border-slate-300 rounded-lg shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition font-mono">
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label for="baseDesde" class="block text-sm font-medium text-slate-700 mb-1">De:</label>
+                      <div class="relative">
+                        <select id="baseDesde" class="w-full text-lg p-3 border-2 border-slate-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition appearance-none">
+                          <option value="2">Binario (2)</option>
+                          <option value="8">Octal (8)</option>
+                          <option value="10" selected="">Decimal (10)</option>
+                          <option value="16">Hexadecimal (16)</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-700">
+                          <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-center sm:col-span-1">
+                      <button id="swapBases" class="p-3 bg-slate-200 hover:bg-blue-500 hover:text-white rounded-full transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" aria-label="Intercambiar bases">
+                        <i class="ph-bold ph-arrows-left-right text-xl"></i>
+                      </button>
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label for="baseA" class="block text-sm font-medium text-slate-700 mb-1">A:</label>
+                      <div class="relative">
+                        <select id="baseA" class="w-full text-lg p-3 border-2 border-slate-300 rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition appearance-none">
+                          <option value="2" selected="">Binario (2)</option>
+                          <option value="8">Octal (8)</option>
+                          <option value="10">Decimal (10)</option>
+                          <option value="16">Hexadecimal (16)</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-700">
+                          <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-6 text-center">
+                    <button id="convertButton" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-transform transform hover:scale-105 disabled:bg-slate-400 disabled:cursor-not-allowed">
+                    <i class="ph-fill ph-sparkle mr-2"></i>
+                    Convertir
+                </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="error-message" class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-lg hidden" role="alert">
+              <p class="font-bold">Error</p>
+              <p id="error-text">Hubo un error al realizar la conversión. Por favor, revisa el número introducido y vuelve a intentarlo.</p>
+            </div>
+
+            <div id="resultado-container" class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+              <div class="p-5 border-b border-slate-200 bg-slate-50/70">
+                <h2 class="text-xl font-bold text-slate-800">Resultado y Explicación</h2>
+              </div>
+              <div class="p-6">
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-lg font-semibold text-slate-600">Conversión</h3>
+                    <div id="conversion-result" class="mt-2 text-2xl font-mono bg-slate-100 p-4 rounded-md text-center">
+                    <span class="text-slate-500">(AAA)<sub class="text-xs">16</sub></span>
+                    <i class="ph-bold ph-arrow-right mx-4 text-blue-500"></i>
+                    <span class="font-bold text-blue-700">(101010101010)<sub class="text-xs">2</sub></span>
+                </div>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-slate-600">Explicación Paso a Paso</h3>
+                    <div id="explanation-result" class="text-slate-600 leading-relaxed space-y-4 mt-2 bg-slate-50 p-4 rounded-md border border-slate-200"><h2 class="text-xl font-bold text-slate-800 mt-6 mb-3">Conversión de hexadecimal a binario</h2><br><br><strong>Número original:</strong> AAA en base 16<br><strong>Resultado:</strong> 101010101010 en base 2<br><br><h3 class="text-lg font-semibold text-slate-700 mt-4 mb-2">Proceso de conversión:</h3><br><br>1. <strong>Paso 1:</strong> Convertir el número de base 16 a decimal<br>2. <strong>Paso 2:</strong> Convertir el resultado decimal a base 2<br><br><em>Nota: Esta es una explicación simplificada. Para obtener explicaciones detalladas paso a paso, se requiere integración con la API de Google Gemini.</em></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="text-center mt-12 text-slate-500 text-sm">
+        <p>© 2024 Herramienta Educativa. Inspirado en el material de CESTE.</p>
+      </footer>
+    </div>
+
+    <script>
+      // State management
+      let activeTab = 'explicacion';
+      let inputValue = '1';
+      let fromUnit = 'GB';
+
+      // Units configuration
+      const UNITS = [
+        { name: 'Kilobyte', symbol: 'KB', base: 1000, power: 1 },
+        { name: 'Megabyte', symbol: 'MB', base: 1000, power: 2 },
+        { name: 'Gigabyte', symbol: 'GB', base: 1000, power: 3 },
+        { name: 'Terabyte', symbol: 'TB', base: 1000, power: 4 },
+        { name: 'Petabyte', symbol: 'PB', base: 1000, power: 5 },
+        { name: 'Exabyte', symbol: 'EB', base: 1000, power: 6 },
+        { name: 'Zettabyte', symbol: 'ZB', base: 1000, power: 7 },
+        { name: 'Yottabyte', symbol: 'YB', base: 1000, power: 8 },
+        { name: 'Kibibyte', symbol: 'KiB', base: 1024, power: 1 },
+        { name: 'Mebibyte', symbol: 'MiB', base: 1024, power: 2 },
+        { name: 'Gibibyte', symbol: 'GiB', base: 1024, power: 3 },
+        { name: 'Tebibyte', symbol: 'TiB', base: 1024, power: 4 },
+        { name: 'Pebibyte', symbol: 'PiB', base: 1024, power: 5 },
+        { name: 'Exbibyte', symbol: 'EiB', base: 1024, power: 6 },
+        { name: 'Zebibyte', symbol: 'ZiB', base: 1024, power: 7 },
+        { name: 'Yobibyte', symbol: 'YiB', base: 1024, power: 8 },
+      ];
+
+      // Tab management
+      function setActiveTab(tab) {
+        activeTab = tab;
+
+        // Update tab buttons
+        document.querySelectorAll('.tab-button').forEach((btn) => {
+          btn.className =
+            'tab-button px-4 py-2 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 flex items-center justify-center bg-white text-slate-700 hover:bg-slate-100';
+        });
+
+        document.getElementById(`tab-${tab}`).className =
+          'tab-button px-4 py-2 rounded-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 flex items-center justify-center bg-blue-600 text-white shadow-md';
+
+        // Update content
+        document.querySelectorAll('.tab-content').forEach((content) => {
+          content.classList.add('hidden');
+        });
+
+        document.getElementById(`content-${tab}`).classList.remove('hidden');
+      }
+
+      // Units converter functions
+      function formatNumber(num) {
+        if (num === 0) return '0';
+        return new Intl.NumberFormat('es-ES', {
+          maximumFractionDigits: 10,
+          minimumFractionDigits: 0,
+        }).format(num);
+      }
+
+      function calculateValueInBytes(value, unit) {
+        const unitData = UNITS.find((u) => u.symbol === unit);
+        if (!unitData) return 0;
+
+        const base = unitData.base === 1000 ? 1000 : 1024;
+        const valueInBits = value * Math.pow(base, unitData.power) * 8;
+
+        return valueInBits / 8;
+      }
+
+      function updateUnitsDisplay() {
+        const value = parseFloat(inputValue);
+        if (isNaN(value)) return;
+
+        const valueInBytes = calculateValueInBytes(value, fromUnit);
+
+        const siUnits = document.getElementById('si-units');
+        const iecUnits = document.getElementById('iec-units');
+
+        siUnits.innerHTML = '';
+        iecUnits.innerHTML = '';
+
+        UNITS.forEach((unit) => {
+          const base = unit.base === 1000 ? 1000 : 1024;
+          const convertedValue = valueInBytes / Math.pow(base, unit.power);
+
+          const unitDiv = document.createElement('div');
+          unitDiv.className = `p-3 rounded-lg flex justify-between items-center transition duration-300 ${
+            fromUnit === unit.symbol
+              ? unit.base === 1000
+                ? 'bg-blue-100 ring-2 ring-blue-500 shadow-md'
+                : 'bg-emerald-100 ring-2 ring-emerald-500 shadow-md'
+              : 'bg-slate-50 hover:bg-slate-100'
+          }`;
+
+          unitDiv.innerHTML = `
+                    <span class="font-medium text-slate-700">${unit.name} <span class="text-sm text-slate-500">(${unit.symbol})</span></span>
+                    <span class="font-mono text-lg ${unit.base === 1000 ? 'text-blue-900' : 'text-emerald-900'} bg-white px-3 py-1 rounded-md border border-slate-200">${formatNumber(convertedValue)}</span>
+                `;
+
+          if (unit.base === 1000) {
+            siUnits.appendChild(unitDiv);
+          } else {
+            iecUnits.appendChild(unitDiv);
+          }
+        });
+      }
+
+      // System converter functions
+      function convertBase(number, fromBase, toBase) {
+        // First convert to decimal
+        let decimal = parseInt(number, fromBase);
+        if (isNaN(decimal)) {
+          throw new Error('Número inválido');
+        }
+
+        // Then convert to target base
+        return decimal.toString(toBase).toUpperCase();
+      }
+
+      function renderExplanation(markdown) {
+        if (!markdown) return '';
+        return markdown
+          .replace(/^### (.*$)/gim, '<h3 class="text-lg font-semibold text-slate-700 mt-4 mb-2">$1</h3>')
+          .replace(/^## (.*$)/gim, '<h2 class="text-xl font-bold text-slate-800 mt-6 mb-3">$1</h2>')
+          .replace(/^# (.*$)/gim, '<h1 class="text-2xl font-bold text-slate-900 mt-8 mb-4">$1</h1>')
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\*(.*?)\*/g, '<em>$1</em>')
+          .replace(/`(.*?)`/g, '<code class="bg-slate-200 text-slate-800 font-mono px-1 rounded text-sm">$1</code>')
+          .replace(/^\* (.*$)/gim, '<li class="ml-5 list-disc">$1</li>')
+          .replace(/\n/g, '<br />');
+      }
+
+      async function handleConvert() {
+        const numero = document.getElementById('numero').value;
+        const baseDesde = document.getElementById('baseDesde').value;
+        const baseA = document.getElementById('baseA').value;
+
+        const errorDiv = document.getElementById('error-message');
+        const resultDiv = document.getElementById('resultado-container');
+        const convertButton = document.getElementById('convertButton');
+
+        errorDiv.classList.add('hidden');
+        resultDiv.classList.add('hidden');
+
+        if (!numero) {
+          document.getElementById('error-text').textContent = 'Por favor, introduce un número.';
+          errorDiv.classList.remove('hidden');
+          return;
+        }
+
+        convertButton.disabled = true;
+        convertButton.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Convirtiendo...
+            `;
+
+        try {
+          const resultado = convertBase(numero, parseInt(baseDesde), parseInt(baseA));
+
+          // Generate a simple explanation since we don't have access to the Gemini API
+          const explanation = generateSimpleExplanation(numero, baseDesde, baseA, resultado);
+
+          document.getElementById('conversion-result').innerHTML = `
+                    <span class="text-slate-500">(${numero})<sub class="text-xs">${baseDesde}</sub></span>
+                    <i class="ph-bold ph-arrow-right mx-4 text-blue-500"></i>
+                    <span class="font-bold text-blue-700">(${resultado})<sub class="text-xs">${baseA}</sub></span>
+                `;
+
+          document.getElementById('explanation-result').innerHTML = renderExplanation(explanation);
+
+          resultDiv.classList.remove('hidden');
+        } catch (error) {
+          document.getElementById('error-text').textContent =
+            'Hubo un error al realizar la conversión. Por favor, revisa el número introducido y vuelve a intentarlo.';
+          errorDiv.classList.remove('hidden');
+        } finally {
+          convertButton.disabled = false;
+          convertButton.innerHTML = `
+                    <i class="ph-fill ph-sparkle mr-2"></i>
+                    Convertir
+                `;
+        }
+      }
+
+      function generateSimpleExplanation(numero, baseDesde, baseA, resultado) {
+        const baseNames = {
+          2: 'binario',
+          8: 'octal',
+          10: 'decimal',
+          16: 'hexadecimal',
+        };
+
+        return `## Conversión de ${baseNames[baseDesde]} a ${baseNames[baseA]}
+
+**Número original:** ${numero} en base ${baseDesde}
+**Resultado:** ${resultado} en base ${baseA}
+
+### Proceso de conversión:
+
+1. **Paso 1:** Convertir el número de base ${baseDesde} a decimal
+2. **Paso 2:** Convertir el resultado decimal a base ${baseA}
+
+*Nota: Esta es una explicación simplificada. Para obtener explicaciones detalladas paso a paso, se requiere integración con la API de Google Gemini.*`;
+      }
+
+      // Event listeners
+      document.addEventListener('DOMContentLoaded', function () {
+        // Tab buttons
+        document.getElementById('tab-explicacion').addEventListener('click', () => setActiveTab('explicacion'));
+        document.getElementById('tab-conversor').addEventListener('click', () => setActiveTab('conversor'));
+        document
+          .getElementById('tab-conversor-sistemas')
+          .addEventListener('click', () => setActiveTab('conversor-sistemas'));
+
+        // Units converter
+        const inputElement = document.getElementById('inputValue');
+        const fromUnitElement = document.getElementById('fromUnit');
+
+        inputElement.addEventListener('input', function (e) {
+          const value = e.target.value;
+          if (/^\d*\.?\d*$/.test(value)) {
+            inputValue = value;
+            updateUnitsDisplay();
+          } else {
+            e.target.value = inputValue;
+          }
+        });
+
+        fromUnitElement.addEventListener('change', function (e) {
+          fromUnit = e.target.value;
+          updateUnitsDisplay();
+        });
+
+        // System converter
+        document.getElementById('numero').addEventListener('input', function (e) {
+          e.target.value = e.target.value.toUpperCase();
+        });
+
+        document.getElementById('swapBases').addEventListener('click', function () {
+          const baseDesde = document.getElementById('baseDesde');
+          const baseA = document.getElementById('baseA');
+
+          const temp = baseDesde.value;
+          baseDesde.value = baseA.value;
+          baseA.value = temp;
+        });
+
+        document.getElementById('convertButton').addEventListener('click', handleConvert);
+
+        // Initial setup
+        updateUnitsDisplay();
+      });
+    </script>
+  
+
+</body></html>
